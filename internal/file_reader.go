@@ -12,10 +12,8 @@ type FileReader interface {
 }
 
 type FileByLineReader struct {
-	flagHandler      FlagHandler
-	textBuffer       []string
-	emptyLineCounter int
-	allLineCounter   int
+	flagHandler FlagHandler
+	textBuffer  []string
 }
 
 func NewFileByLineReader(flagHandler FlagHandler, textBuffer []string) FileReader {
